@@ -1,3 +1,51 @@
+@font-face {
+    font-family: 'cera_proregular';
+    src: url('../Fonts/cerapro-regular-webfont.eot');
+    src: url('../Fonts/cerapro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/cerapro-regular-webfont.woff2') format('woff2'),
+    url('../Fonts/cerapro-regular-webfont.woff') format('woff'),
+    url('../Fonts/cerapro-regular-webfont.ttf') format('truetype'),
+    url('../Fonts/cerapro-regular-webfont.svg#cera_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cera_problack';
+    src: url('../Fonts/cerapro-black-webfont.eot');
+    src: url('../Fonts/cerapro-black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/cerapro-black-webfont.woff2') format('woff2'),
+    url('../Fonts/cerapro-black-webfont.woff') format('woff'),
+    url('../Fonts/cerapro-black-webfont.ttf') format('truetype'),
+    url('../Fonts/cerapro-black-webfont.svg#cera_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cera_promedium';
+    src: url('../Fonts/cerapro-medium-webfont.eot');
+    src: url('../Fonts/cerapro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/cerapro-medium-webfont.woff2') format('woff2'),
+    url('../Fonts/cerapro-medium-webfont.woff') format('woff'),
+    url('../Fonts/cerapro-medium-webfont.ttf') format('truetype'),
+    url('../Fonts/cerapro-medium-webfont.svg#cera_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cera_probold';
+    src: url('../Fonts/cerapro-bold-webfont.eot');
+    src: url('../Fonts/cerapro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/cerapro-bold-webfont.woff2') format('woff2'),
+    url('../Fonts/cerapro-bold-webfont.woff') format('woff'),
+    url('../Fonts/cerapro-bold-webfont.ttf') format('truetype'),
+    url('../Fonts/cerapro-bold-webfont.svg#cera_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 *{
     padding: 0;
     margin: 0;
@@ -88,3 +136,156 @@ button{
 .facebook-picture{
     padding-right: 4px;
 }
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    border-bottom: solid 1px grey; /*добавилась линия внизу второго контейнера*/
+    display: flex; /*получилось все выровнять только flex*/
+    justify-content: space-between;
+}
+header{
+    padding-top: 31px;
+
+}
+header nav, header nav li, header.logo{
+    display: inline-block;
+}
+header nav li:after{
+    height: 3px;
+    /*background-color: #46a358;*/
+    background-color: transparent;
+    width: 100%;
+    content: "";
+    display: block;
+    margin-top: 22px;
+    transition: 0.3s;
+}
+header ul{
+    list-style: none;
+    /*margin-bottom: 12px;*/
+}
+header nav li:hover:after{
+    background-color: #46a358;
+}
+header nav li a{
+    text-decoration: none;
+  }
+header .container .logo{
+    margin-right: 229px;
+    display: inline-block;
+    /*padding-bottom: 12px; /*не выравнивает логотип как надо?*/
+}
+header .login{
+    margin-left: 370px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    /*margin-bottom: 18px;*/
+}
+header nav li{
+    margin-right: 50px;
+    /*margin-bottom: 37px;*/
+
+}
+header nav li:last-of-type{
+    margin-right: 0;
+
+}
+header nav li a{
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    /*font-family:'cera_proregular'; ломает всё меню*/
+}
+.login{
+    background: #46a358;
+    border-radius: 6px;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    font-family: 'cera_promedium';
+}
+.login:before{
+    content:"";
+    display:inline-block;
+    background-image:url("../Images/Logout.svg"); /*появился лишний элемент в картинке?*/
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+.banner .container{
+    background: linear-gradient(135deg, #f5f5f5 0%, #f5f5f5 100%);
+    min-height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.banner article{
+    max-width: 557px;
+    display: inline-block;
+    margin-right: 93px;
+    padding-left: 43px;
+    box-sizing: border-box;
+}
+
+article h4{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    margin-bottom: 17px;
+    font-family: 'cera_promedium';
+}
+h1 span{ /*переносит текст на новую строку??*/
+    color: #46a358;
+
+        }
+.container h1{
+    margin-bottom: 17px;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    font-family: 'cera_problack';
+}
+.container p{
+    margin-bottom: 44px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #727272;
+    font-family: 'cera_proregular';
+}
+article a {
+    background: #46a358;
+    border-radius: 6px;
+    width: 140px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'cera_probold';
+}
+.banner .container img {
+    width: 518px;
+    height: 470px;
+}
+
+/*.login img{
+    margin-right: 4px;
+}*/
