@@ -10,6 +10,7 @@
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'cera_problack';
     src: url('../Fonts/cerapro-black-webfont.eot');
@@ -22,6 +23,7 @@
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'cera_promedium';
     src: url('../Fonts/cerapro-medium-webfont.eot');
@@ -34,6 +36,7 @@
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'cera_probold';
     src: url('../Fonts/cerapro-bold-webfont.eot');
@@ -46,57 +49,75 @@
     font-style: normal;
 
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-input{
+
+input {
     font-weight: 400;
     font-size: 14px;
     line-height: 114%;
     color: #a5a5a5;
     padding: 12px 14px;
     border: 1px solid #eaeaea;
-    border-radius: 5px; width: 100%;
+    border-radius: 5px;
+    width: 100%;
     height: 40%;
     margin-top: 16px;
     box-sizing: border-box;
 }
-.conteiner{
+
+.conteiner {
     max-width: 500px;
-    margin:auto;
+    margin: auto;
     border: solid 2px black;
     padding: 52px 100px 50px;
     box-sizing: border-box;
 }
-#box_model{
-    text-align: center; margin-bottom: 40px;
+
+#box_model {
+    text-align: center;
+    margin-bottom: 40px;
 }
-.text{
+
+.text {
     font-weight: 400;
     font-size: 13px;
     line-height: 123%;
     color: #3d3d3d;
     margin-bottom: 14px;
 }
-.conteiner a{
-    display: block; font-weight: 500;
+
+.conteiner a {
+    display: block;
+    font-weight: 500;
     font-size: 13px;
     line-height: 123%;
     text-align: center;
-    color: #727272; border: 1px solid #eaeaea;
-    border-radius: 5px; box-sizing: border-box;  width: 100%;
-    padding: 13px  68px; margin-top: 15px; text-decoration: none;
+    color: #727272;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 13px 68px;
+    margin-top: 15px;
+    text-decoration: none;
 }
-.text_register{
+
+.text_register {
     font-weight: 400;
     font-size: 13px;
     line-height: 123%;
-    color: #3d3d3d; text-align: center;
-    margin-bottom: 27px;"
+    color: #3d3d3d;
+    text-align: center;
+    margin-bottom: 27px;
+"
 }
-.conteiner #box_model span:first-of-type{
+
+.conteiner #box_model span:first-of-type {
     font-weight: 500;
     font-size: 20px;
     line-height: 80%;
@@ -104,13 +125,15 @@ input{
     border-right: 5px;
     margin: 12px;
 }
-.conteiner #box_model span:last-of-type{
+
+.conteiner #box_model span:last-of-type {
     font-weight: 500;
     font-size: 20px;
     line-height: 80%;
     color: #46a358;
 }
-.conteiner #box_model span:nth-child(2){
+
+.conteiner #box_model span:nth-child(2) {
     font-weight: 250;
     font-size: 18px;
     line-height: 89%;
@@ -118,40 +141,46 @@ input{
     padding-right: 10px;
 }
 
-button{
+button {
     background: #46a358;
     box-sizing: border-box;
     border-radius: 5px;
-    padding:15px 118px;
+    padding: 15px 118px;
     margin-top: 41px;
     margin-bottom: 36px;
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
-    color: #fff; text-align: center;
+    color: #fff;
+    text-align: center;
 }
-.google-picture{
+
+.google-picture {
     padding-right: 10px;
 }
-.facebook-picture{
+
+.facebook-picture {
     padding-right: 4px;
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin: auto;
     border-bottom: solid 1px grey; /*добавилась линия внизу второго контейнера*/
     display: flex; /*получилось все выровнять только flex*/
     justify-content: space-between;
 }
-header{
+
+header {
     padding-top: 31px;
 
 }
-header nav, header nav li, header.logo{
-    display: inline-block;
+
+header nav, header nav li, header.logo {
+    /*display: inline-block;*/
 }
-header nav li:after{
+
+header nav li:after {
     height: 3px;
     /*background-color: #46a358;*/
     background-color: transparent;
@@ -161,22 +190,29 @@ header nav li:after{
     margin-top: 22px;
     transition: 0.3s;
 }
-header ul{
+
+header ul {
     list-style: none;
+   display: flex;
+    gap: 50px;
     /*margin-bottom: 12px;*/
 }
-header nav li:hover:after{
+
+header nav li:hover:after {
     background-color: #46a358;
 }
-header nav li a{
+
+header nav li a {
     text-decoration: none;
-  }
-header .container .logo{
-   /* margin-right: 229px;*/
+}
+
+header .container .logo {
+    /* margin-right: 229px;*/
     display: inline-block;
     /*padding-bottom: 12px; /*не выравнивает логотип как надо?*/
 }
-header .login{
+
+header .login {
     /*margin-left: 370px;*/
     font-weight: 500;
     font-size: 16px;
@@ -184,22 +220,26 @@ header .login{
     text-decoration: none;
     /*margin-bottom: 18px;*/
 }
-header nav li{
+
+header nav li {
     margin-right: 50px;
     /*margin-bottom: 37px;*/
 
 }
-header nav li:last-of-type{
+
+header nav li:last-of-type {
     margin-right: 0;
 
 }
-header nav li a{
+
+header nav li a {
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
-    font-family:'cera_proregular';
+    font-family: 'cera_proregular';
 }
-.login{
+
+.login {
     background: #46a358;
     border-radius: 6px;
     /*width: 100px;*/
@@ -211,24 +251,30 @@ header nav li a{
     float: right;
     font-family: 'cera_promedium';
 }
-.login:before{
-    content:"";
-    display:inline-block;
-    background-image:url("../Images/Logout.svg"); /*появился лишний элемент в картинке?*/
+
+.login:before {
+    content: "";
+    display: inline-block;
+    background-image: url("../Images/Logout.svg"); /*появился лишний элемент в картинке?*/
     margin-right: 5px;
     margin-left: 17px;
     height: 18px;
     width: 18px;
 }
-.banner .container{
+
+/*иконки*/
+
+
+.banner .container {
     background: linear-gradient(135deg, #f5f5f5 0%, #f5f5f5 100%);
     min-height: 450px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: none;g
+    border-bottom: none;
 }
-.banner article{
+
+.banner article {
     /*max-width: 557px;*/
     display: inline-block;
     margin-right: 93px;
@@ -236,7 +282,7 @@ header nav li a{
     box-sizing: border-box;
 }
 
-article h4{
+article h4 {
     font-weight: 500;
     font-size: 14px;
     line-height: 114%;
@@ -246,11 +292,13 @@ article h4{
     margin-bottom: 17px;
     font-family: 'cera_promedium';
 }
-h1 span{ /*переносит текст на новую строку??*/
+
+h1 span { /*переносит текст на новую строку??*/
     color: #46a358;
 
-        }
-.container h1{
+}
+
+.container h1 {
     margin-bottom: 17px;
     font-weight: 900;
     font-size: 70px;
@@ -259,7 +307,8 @@ h1 span{ /*переносит текст на новую строку??*/
     color: #3d3d3d;
     font-family: 'cera_problack';
 }
-.container p{
+
+.container p {
     margin-bottom: 44px;
     font-weight: 400;
     font-size: 14px;
@@ -267,6 +316,7 @@ h1 span{ /*переносит текст на новую строку??*/
     color: #727272;
     font-family: 'cera_proregular';
 }
+
 article a {
     background: #46a358;
     border-radius: 6px;
@@ -285,6 +335,7 @@ article a {
     align-items: center;
     font-family: 'cera_probold';
 }
+
 .banner .container img {
     width: 518px;
     height: 470px;
@@ -293,3 +344,123 @@ article a {
 /*.login img{
     margin-right: 4px;
 }*/
+
+/*.left_sidebar{
+    display: inline-flex;
+    justify-content: space-between;
+}*/
+.categories .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+
+}
+.categories .left_sidebar{
+    max-width: 310px;
+    border-bottom: none;
+    background: #fbfbfb;
+
+}
+.left_sidebar  li{
+    list-style: none;
+
+}
+.left_sidebar li a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #3d3d3d;
+    line-height: 267%;
+    font-size: 15px;
+    line-height: 267%;
+    margin-left: 30px;
+
+}
+.list_1{
+    margin-bottom: 377px;
+    list-style: none;
+    min-height: 774px;
+}
+.left_sidebar h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin-left: 18px;
+    margin-top: 14px;
+}
+.left_sidebar img{
+    width: 370px;
+    height: 470px;
+    margin-left: -30px;
+}
+.categories .right_content{
+    width: 840px;
+}
+.categories .right_content .flex_2 .list_2{
+    display: flex;
+    justify-content: space-between;
+    width: 838px;
+    height: 23px;
+
+}
+.categories .list_2 {
+    list-style: none;
+
+}
+.categories .right_content .list_2 li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+
+}
+.list_2 li a{
+   display: inline;
+    margin-right: 37px;
+}
+.list_2 li:last-of-type {
+    margin-right: 0;
+}
+
+.list_2 nav li:after {
+    height: 3px;
+    background-color: transparent;
+    width: 100%;
+    content: "";
+    display: block;
+    margin-top: 22px;
+    transition: 0.3s;
+
+}
+.list_2 li:hover:after {
+    background-color: #46a358;
+}
+
+.categories .right_content article{
+    width: 258px;
+
+}
+.categories .right_content .flex_2 {
+    display: flex;
+    justify-content: space-between;
+    width: 838px;
+}
+article p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+}
+.flex_2 p span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+}
+/*відступи*/
+article img{
+    margin-bottom: 24px;
+}

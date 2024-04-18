@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.d_bloc{
+    width: 300px;
+    background-color: red;
+    margin: 10px;
+}
+.d_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items:stretch;
+    flex-wrap: wrap;
+}
