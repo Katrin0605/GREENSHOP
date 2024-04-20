@@ -49,6 +49,17 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'cera_prolight';
+    src: url('../Fonts/cerapro-light-webfont.eot');
+    src: url('../Fonts/cerapro-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/cerapro-light-webfont.woff2') format('woff2'),
+    url('../Fonts/cerapro-light-webfont.woff') format('woff'),
+    url('../Fonts/cerapro-light-webfont.ttf') format('truetype'),
+    url('../Fonts/cerapro-light-webfont.svg#cera_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     padding: 0;
@@ -169,6 +180,7 @@ button {
     border-bottom: solid 1px grey; /*добавилась линия внизу второго контейнера*/
     display: flex; /*получилось все выровнять только flex*/
     justify-content: space-between;
+    margin-bottom: 12px;
 }
 
 header {
@@ -316,8 +328,8 @@ h1 span { /*переносит текст на новую строку??*/
     color: #727272;
     font-family: 'cera_proregular';
 }
-
-article a {
+/*кнопка*/
+.banner .container article a {
     background: #46a358;
     border-radius: 6px;
     /*width: 140px;*/
@@ -341,27 +353,27 @@ article a {
     height: 470px;
 }
 
-/*.login img{
-    margin-right: 4px;
-}*/
 
-/*.left_sidebar{
-    display: inline-flex;
-    justify-content: space-between;
-}*/
+
+/*Секция Категории*/
+
 .categories .container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
-
+    border-bottom: none;
+    align-items: flex-start;
 }
+
+/*левое меню*/
+
 .categories .left_sidebar{
     max-width: 310px;
     border-bottom: none;
     background: #fbfbfb;
-
+    margin-top: 27px;
 }
 .left_sidebar  li{
     list-style: none;
@@ -375,10 +387,10 @@ article a {
     font-size: 15px;
     line-height: 267%;
     margin-left: 30px;
-
+    font-family: 'cera_proregular';
 }
 .list_1{
-    margin-bottom: 377px;
+
     list-style: none;
     min-height: 774px;
 }
@@ -389,33 +401,36 @@ article a {
     color: #3d3d3d;
     margin-left: 18px;
     margin-top: 14px;
+    margin-bottom: 7px;
+    font-family: 'cera_probold';
 }
 .left_sidebar img{
-    width: 370px;
-    height: 470px;
+
     margin-left: -30px;
 }
+
+/*правое меню*/
+
 .categories .right_content{
     width: 840px;
+    margin-top: 27px;
 }
 .categories .right_content .flex_2 .list_2{
     display: flex;
     justify-content: space-between;
-    width: 838px;
-    height: 23px;
-
 }
+
 .categories .list_2 {
     list-style: none;
-
 }
+
 .categories .right_content .list_2 li a{
     text-decoration: none;
     font-weight: 400;
     font-size: 15px;
     line-height: 107%;
     color: #3d3d3d;
-
+    font-family: 'cera_proregular';
 }
 .list_2 li a{
    display: inline;
@@ -425,18 +440,30 @@ article a {
     margin-right: 0;
 }
 
-.list_2 nav li:after {
+.list_2 li:after {
     height: 3px;
     background-color: transparent;
     width: 100%;
     content: "";
     display: block;
-    margin-top: 22px;
+    margin-top: 7px;
     transition: 0.3s;
 
 }
+
+/*нижнее подчеркивание списка*/
 .list_2 li:hover:after {
+   /* background-color: #46a358;*/
+    border: 2px solid #46a358;
+    width: 65px;
+    height: 0px;
+}
+/*.list_2 li:hover{
     background-color: #46a358;
+}*/
+
+.list_2 p{
+    font-family: 'cera_proregular';
 }
 
 .categories .right_content article{
@@ -446,21 +473,75 @@ article a {
 .categories .right_content .flex_2 {
     display: flex;
     justify-content: space-between;
-    width: 838px;
+   flex-wrap: wrap;
 }
-article p{
+.flex_2 article p{
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
     color: #3d3d3d;
+    margin-bottom: 7px;
+    font-family: 'cera_proregular';
 }
-.flex_2 p span{
+.flex_2 .price{
     font-weight: 700;
     font-size: 18px;
     line-height: 89%;
     color: #46a358;
+    font-family: 'cera_probold';
 }
 /*відступи*/
 article img{
     margin-bottom: 24px;
+}
+.flex_2 article{
+    margin-bottom: 70px;
+}
+
+/*пеереход по страницам*/
+.categories .pagination{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 82px;
+    margin-top: 90px;
+}
+.categories .pagination ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+.categories .pagination ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+.pagination .pages a{
+    text-decoration: none;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #e5e5e5;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'cera_prolight';
+}
+/*Добавление стрелки на кнопку*/
+.categories .pagination ul li:last-of-type:hover a svg path{
+stroke: white!important;
+   /* content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../Images/Right2.svg");*/
+}
+
+.categories .pagination ul li:hover{
+    background-color: #46a358;
+}
+.categories .pagination ul li:hover a{
+    color:#ffffff;
 }
