@@ -389,8 +389,12 @@ h1 span { /*переносит текст на новую строку??*/
     margin-left: 30px;
     font-family: 'cera_proregular';
 }
-.list_1{
+.left_sidebar li:hover a{
+    color: #46a358;
+    font-family: 'cera_probold';
+}
 
+.list_1{
     list-style: none;
     min-height: 774px;
 }
@@ -431,6 +435,10 @@ h1 span { /*переносит текст на новую строку??*/
     line-height: 107%;
     color: #3d3d3d;
     font-family: 'cera_proregular';
+}
+.categories .right_content .list_2 li:hover a{
+    color: #46a358;
+    font-family: 'cera_probold';
 }
 .list_2 li a{
    display: inline;
