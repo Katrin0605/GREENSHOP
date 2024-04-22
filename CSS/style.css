@@ -419,6 +419,9 @@ h1 span { /*переносит текст на новую строку??*/
     width: 840px;
     margin-top: 27px;
 }
+.categories .right_content article:hover{
+    border-top:solid 1px #46A358;
+}
 .categories .right_content .flex_2 .list_2{
     display: flex;
     justify-content: space-between;
@@ -476,7 +479,8 @@ h1 span { /*переносит текст на новую строку??*/
 
 .categories .right_content article{
     width: 258px;
-
+    border-top:solid 1px transparent;
+    position: relative;
 }
 .categories .right_content .flex_2 {
     display: flex;
@@ -500,12 +504,74 @@ h1 span { /*переносит текст на новую строку??*/
 }
 /*відступи*/
 article img{
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 .flex_2 article{
     margin-bottom: 70px;
 }
+/*скидка (position)*/
+.categories .right_content article .sale{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background-color: #46A358;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
 
+}
+/*старая цена*/
+.categories .right_content article .price_sale{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 89%;
+    color: #a5a5a5;
+    display: inline-block;
+    margin-left: 16px;
+    font-family: 'cera_proregular';
+    /*text-decoration: line-through; зачеркнуть текст*/
+    position: relative;
+}
+/*линия на текст*/
+.categories .right_content article .price_sale:after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    background-color: #46A358;
+  /* border: 1px solid #cbcbcb;
+    width: 65px;
+    height: 0px;*/
+    width: 100%;
+    top:8px;
+}
+
+/*иконки в article*/
+.categories .right_content article ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 67px;
+    width: 125px;
+    /*height: 35px;*/
+    left: calc(50% - 62px);
+    justify-content: space-between;
+    opacity: 0; /*Прозрачность*/
+    transition: 0.4s;
+}
+.categories .right_content article ul li{
+    width: 20px;
+    height: 20px;
+
+}
+.categories .right_content article:hover ul{
+    opacity: 1;
+}
+.categories .right_content article ul:hover a{
+   color: #46A358;
+}
 /*пеереход по страницам*/
 .categories .pagination{
     display: flex;
@@ -552,4 +618,22 @@ stroke: white!important;
 }
 .categories .pagination ul li:hover a{
     color:#ffffff;
+}
+
+
+/*нижний blog*/
+
+.blog{
+    min-width: 1200px;
+}
+
+.blog .container{
+    display: flex;
+   
+    justify-content: space-between;
+    border-bottom: none;
+}
+
+.blog article{
+   min-width: 586px;
 }
