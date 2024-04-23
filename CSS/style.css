@@ -569,8 +569,8 @@ article img{
 .categories .right_content article:hover ul{
     opacity: 1;
 }
-.categories .right_content article ul:hover a{
-   color: #46A358;
+.categories .right_content article ul a:hover svg path{
+    stroke: #46A358!important;
 }
 /*пеереход по страницам*/
 .categories .pagination{
