@@ -185,7 +185,6 @@ button {
 
 header {
     padding-top: 31px;
-
 }
 
 header nav, header nav li, header.logo {
@@ -201,12 +200,14 @@ header nav li:after {
     display: block;
     margin-top: 22px;
     transition: 0.3s;
-   /* font-family: 'cera_probold';*/
+    font-family: 'cera_proregular';
 }
 header nav li:hover a{
  font-family: 'cera_probold';
 }
-
+.drop .dropdown li a{
+    font-family: 'cera_proregular';
+}
 header ul {
     list-style: none;
    display: flex;
@@ -218,11 +219,11 @@ header nav ul .dropdown{
     display: block;
     position: absolute;
     background: #edf6ee;
-    top: 88px;
+    top: 59px;
     height: 0;
     opacity: 0;
     min-width: 188px;
-    left: 750px;
+    left: 0px;
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
@@ -237,13 +238,7 @@ header nav ul li.drop:hover .dropdown{
     transition: 0.5s;
 }
 
-
-/*header nav ul li :hover a{
-    font-weight: 700;
-    font-size: 16px;
-   !* color: #fff;*!
-    font-family: 'cera_probold';
-}*/
+/*Выпад.список_2*/
 header nav ul .dropdown_2{
     display: block;
     position: absolute;
@@ -253,14 +248,18 @@ header nav ul .dropdown_2{
     right: -177px;
     opacity: 0;
     min-width: 178px;
-  /*  font-family: 'cera_proregular';*/
-}
-/*цвет текста в выпадающем списке*/
-header nav ul .dropdown li:hover a{
-      font-family: 'cera_proregular';
-    color: #fff;
+    font-family: 'cera_proregular';
 }
 
+.dropdown li:hover a, .drop_2 .dropdown_2 li:hover a{
+    color:white;
+    font-family: 'cera_probold';
+}
+
+.dropdown li a, .drop_2 .dropdown_2 li a{
+    color: #3d3d3d;
+    font-family: 'cera_proregular';
+}
 header nav ul li .drop_2{
     position: relative;
 }
@@ -329,7 +328,7 @@ header .login {
 header nav li {
     margin-right: 50px;
     /*margin-bottom: 37px;*/
-
+position: relative;
 }
 
 header nav li:last-of-type {
