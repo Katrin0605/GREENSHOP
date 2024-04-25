@@ -201,6 +201,10 @@ header nav li:after {
     display: block;
     margin-top: 22px;
     transition: 0.3s;
+   /* font-family: 'cera_probold';*/
+}
+header nav li:hover a{
+ font-family: 'cera_probold';
 }
 
 header ul {
@@ -209,15 +213,104 @@ header ul {
     gap: 50px;
     /*margin-bottom: 12px;*/
 }
+/*Выпадающие списки в меню*/
+header nav ul .dropdown{
+    display: block;
+    position: absolute;
+    background: #edf6ee;
+    top: 88px;
+    height: 0;
+    opacity: 0;
+    min-width: 188px;
+    left: 1000px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    font-family: 'cera_proregular';
+}
+header nav ul li.dropdown{
+    position: relative;
+}
+header nav ul li.drop:hover .dropdown{
+    opacity: 1;
+    height: auto;
+    transition: 0.5s;
+}
 
+
+/*header nav ul li :hover a{
+    font-weight: 700;
+    font-size: 16px;
+   !* color: #fff;*!
+    font-family: 'cera_probold';
+}*/
+header nav ul .dropdown_2{
+    display: block;
+    position: absolute;
+    background: #edf6ee;
+    top: 0px;
+    height: 0;
+    right: -177px;
+    opacity: 0;
+    min-width: 178px;
+  /*  font-family: 'cera_proregular';*/
+}
+/*цвет текста в выпадающем списке*/
+header nav ul .dropdown li:hover a{
+      font-family: 'cera_proregular';
+    color: #fff;
+}
+
+header nav ul li .drop_2{
+    position: relative;
+}
+header nav ul li.drop_2:hover .dropdown_2{
+    opacity: 1;
+    height: auto;
+    transition: 0.7s;
+}
 header nav li:hover:after {
     background-color: #46a358;
 }
+/*Стрелка в списке*/
+header nav ul .dropdown li:last-of-type:after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../Images/Right2.svg");
+    position: absolute;
+    right: 5px;
+    top:-10px;
+    transition: 2s;
+}
+header nav ul .dropdown_2 li:last-of-type:after{
+    display:none;
+}
+header nav ul .dropdown li:last-of-type:hover:after{
+    transform: rotate(180deg);
 
+}
+
+header nav li ul li:after{
+    display:none;
+}
+header nav li ul li:hover{
+    background-color: #46a358;
+    }
+header nav li ul li{
+    margin-right: 0;
+    min-height: 35px;
+}
 header nav li a {
     text-decoration: none;
 }
+header nav li ul li a{
+    margin-left: 12px;
+}
 
+
+/*Логотип*/
 header .container .logo {
     /* margin-right: 229px;*/
     display: inline-block;
@@ -572,6 +665,7 @@ article img{
 .categories .right_content article ul a:hover svg path{
     stroke: #46A358!important;
 }
+
 /*пеереход по страницам*/
 .categories .pagination{
     display: flex;
@@ -587,6 +681,10 @@ article img{
 .categories .pagination ul li{
     list-style: none;
     margin-left: 10px;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    overflow: hidden; /*убираем лишнее (уголки иконок)*/
 }
 .pagination .pages a{
     text-decoration: none;
