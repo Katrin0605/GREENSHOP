@@ -207,6 +207,8 @@ header nav li:hover a{
 }
 .drop .dropdown li a{
     font-family: 'cera_proregular';
+    position: relative;
+    top: 7px;
 }
 header ul {
     list-style: none;
