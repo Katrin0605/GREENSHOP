@@ -318,8 +318,9 @@ header .container .logo {
     /*padding-bottom: 12px; /*не выравнивает логотип как надо?*/
 }
 
-header .container .logo img:hover{
-    animation: animate 3s, infinity;
+header .container .logo img{
+    animation: animate 3s;
+    animation-iteration-count: infinite;
 }
 
 
