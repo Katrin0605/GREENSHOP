@@ -7,10 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GREENSHOP | Header</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/owl.carousel.css">
+    <link rel="stylesheet" href="CSS/owl.theme.default.css">
+
 
 
 </head>
 <body>
+<!-- Прелоадер -->
+<div class="preloader">
+    <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor"
+              d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+        </path>
+    </svg>
+</div>
+<script>
+    window.onload = function () {
+        document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+        }, 500);
+    }
+</script>
+<!--<script>
+    window.onload = function () {
+        document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+        }, 500);
+    }
+</script>-->
 <header>
     <div class="container">
         <a href="#" class="logo">
@@ -539,8 +568,10 @@
     <p>
         We are an online plant shop offering a wide range of cheap and trendy plants.
     </p>
+
  </div>
-    <div class="flowers">
+
+    <div class="flowers owl-carousel">
         <article>
             <img src="Images/01.svg" alt="cactus">
             <div class="read">
@@ -627,6 +658,94 @@
                     <path d="M8.78051 4.15514C8.58483 3.9603 8.58415 3.64372 8.77899 3.44804C8.95612 3.27015 9.23386 3.25341 9.42991 3.39822L9.48609 3.44652L13.5194 7.46252C13.6978 7.64017 13.7141 7.91891 13.5681 8.11496L13.5195 8.17111L9.48612 12.1878C9.29046 12.3826 8.97387 12.382 8.77902 12.1863C8.60187 12.0084 8.58631 11.7306 8.73195 11.5352L8.78048 11.4792L12.4578 7.81663L8.78051 4.15514Z" fill="#3D3D3D" />
                 </svg>
             </a>
+            </div>
+        </article>
+        <article>
+            <img src="Images/01.svg" alt="cactus">
+            <div class="read">
+                <p>
+                    <span class="september"> September 12  I Read in 6 minutes</span>
+                </p>
+                <h3>
+                    Cactus & Succulent
+                    Care Tips
+                </h3>
+                <p>
+                    Cacti are succulents are easy care plants for any home or patio.
+                </p>
+                <a href="#">
+                    Read More
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.6665 7.81714C2.6665 7.56401 2.85461 7.35481 3.09866 7.3217L3.1665 7.31714L13.1665 7.31714C13.4426 7.31714 13.6665 7.541 13.6665 7.81714C13.6665 8.07027 13.4784 8.27947 13.2344 8.31257L13.1665 8.31714H3.1665C2.89036 8.31714 2.6665 8.09328 2.6665 7.81714Z" fill="#3D3D3D" />
+                        <path d="M8.78051 4.15514C8.58483 3.9603 8.58415 3.64372 8.77899 3.44804C8.95612 3.27015 9.23386 3.25341 9.42991 3.39822L9.48609 3.44652L13.5194 7.46252C13.6978 7.64017 13.7141 7.91891 13.5681 8.11496L13.5195 8.17111L9.48612 12.1878C9.29046 12.3826 8.97387 12.382 8.77902 12.1863C8.60187 12.0084 8.58631 11.7306 8.73195 11.5352L8.78048 11.4792L12.4578 7.81663L8.78051 4.15514Z" fill="#3D3D3D" />
+                    </svg>
+                </a>
+            </div>
+        </article>
+        <article>
+            <img src="Images/02.svg" alt="flouers">
+            <div class="read">
+                <p>
+                    <span class="september">September 13  I Read in 2 minutes</span>
+                </p>
+                <h3>
+                    Top 10 Succulents for
+                    Your Home
+                </h3>
+                <p>
+                    Best in hanging baskets. Prefers medium to high light.
+                </p>
+                <a href="#">
+                    Read More
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.6665 7.81714C2.6665 7.56401 2.85461 7.35481 3.09866 7.3217L3.1665 7.31714L13.1665 7.31714C13.4426 7.31714 13.6665 7.541 13.6665 7.81714C13.6665 8.07027 13.4784 8.27947 13.2344 8.31257L13.1665 8.31714H3.1665C2.89036 8.31714 2.6665 8.09328 2.6665 7.81714Z" fill="#3D3D3D" />
+                        <path d="M8.78051 4.15514C8.58483 3.9603 8.58415 3.64372 8.77899 3.44804C8.95612 3.27015 9.23386 3.25341 9.42991 3.39822L9.48609 3.44652L13.5194 7.46252C13.6978 7.64017 13.7141 7.91891 13.5681 8.11496L13.5195 8.17111L9.48612 12.1878C9.29046 12.3826 8.97387 12.382 8.77902 12.1863C8.60187 12.0084 8.58631 11.7306 8.73195 11.5352L8.78048 11.4792L12.4578 7.81663L8.78051 4.15514Z" fill="#3D3D3D" />
+                    </svg>
+                </a>
+            </div>
+        </article>
+        <article>
+            <img src="Images/03.svg" alt="flouers">
+            <div class="read">
+                <p>
+                    <span class="september"> September 15  I Read in 3 minutes</span>
+                </p>
+                <h3>
+                    Cacti & Succulent
+                    Care Tips
+                </h3>
+                <p>
+                    Cacti and succulents thrive in containers and because most are..
+                </p>
+                <a href="#">
+                    Read More
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.6665 7.81714C2.6665 7.56401 2.85461 7.35481 3.09866 7.3217L3.1665 7.31714L13.1665 7.31714C13.4426 7.31714 13.6665 7.541 13.6665 7.81714C13.6665 8.07027 13.4784 8.27947 13.2344 8.31257L13.1665 8.31714H3.1665C2.89036 8.31714 2.6665 8.09328 2.6665 7.81714Z" fill="#3D3D3D" />
+                        <path d="M8.78051 4.15514C8.58483 3.9603 8.58415 3.64372 8.77899 3.44804C8.95612 3.27015 9.23386 3.25341 9.42991 3.39822L9.48609 3.44652L13.5194 7.46252C13.6978 7.64017 13.7141 7.91891 13.5681 8.11496L13.5195 8.17111L9.48612 12.1878C9.29046 12.3826 8.97387 12.382 8.77902 12.1863C8.60187 12.0084 8.58631 11.7306 8.73195 11.5352L8.78048 11.4792L12.4578 7.81663L8.78051 4.15514Z" fill="#3D3D3D" />
+                    </svg>
+                </a>
+            </div>
+        </article>
+        <article>
+            <img src="Images/04.svg" alt="flouers">
+            <div class="read">
+                <p>
+                    <span class="september">September 15  I Read in 2 minutes</span>
+                </p>
+                <h3>
+                    Best Houseplants
+                    Room by Room
+                </h3>
+                <p>
+                    The benefits of houseplants are endless. In addition to..
+                </p>
+                <a href="#">
+                    Read More
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.6665 7.81714C2.6665 7.56401 2.85461 7.35481 3.09866 7.3217L3.1665 7.31714L13.1665 7.31714C13.4426 7.31714 13.6665 7.541 13.6665 7.81714C13.6665 8.07027 13.4784 8.27947 13.2344 8.31257L13.1665 8.31714H3.1665C2.89036 8.31714 2.6665 8.09328 2.6665 7.81714Z" fill="#3D3D3D" />
+                        <path d="M8.78051 4.15514C8.58483 3.9603 8.58415 3.64372 8.77899 3.44804C8.95612 3.27015 9.23386 3.25341 9.42991 3.39822L9.48609 3.44652L13.5194 7.46252C13.6978 7.64017 13.7141 7.91891 13.5681 8.11496L13.5195 8.17111L9.48612 12.1878C9.29046 12.3826 8.97387 12.382 8.77902 12.1863C8.60187 12.0084 8.58631 11.7306 8.73195 11.5352L8.78048 11.4792L12.4578 7.81663L8.78051 4.15514Z" fill="#3D3D3D" />
+                    </svg>
+                </a>
             </div>
         </article>
     </div>
@@ -791,5 +910,8 @@
         <p> © 2021 GreenShop. All Rights Reserved.</p>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="JS/owl.carousel.js"></script>
+<script src="JS/scripts.js"></script>
 </body>
 </html>
