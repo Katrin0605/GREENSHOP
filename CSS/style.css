@@ -233,11 +233,13 @@ header nav ul .dropdown{
 }
 header nav ul li.dropdown{
     position: relative;
+
 }
 header nav ul li.drop:hover .dropdown{
     opacity: 1;
     height: auto;
     transition: 0.5s;
+   
 }
 
 /*Выпад.список_2*/
@@ -269,6 +271,7 @@ header nav ul li.drop_2:hover .dropdown_2{
     opacity: 1;
     height: auto;
     transition: 0.7s;
+
 }
 header nav li:hover:after {
     background-color: #46a358;
@@ -322,7 +325,7 @@ header .container .logo img{
     animation: animate 3s;
     animation-iteration-count: infinite;
 }
-
+/*анимация логотипа*/
 
 @keyframes animate {
     0% {
@@ -534,7 +537,8 @@ h1 span { /*переносит текст на новую строку??*/
     font-family: 'cera_probold';
 }
 .left_sidebar img{
-
+    width: 370px;
+    height: 470px;
     margin-left: -30px;
 }
 
@@ -789,6 +793,8 @@ stroke: white!important;
 }
 .blog .container article img{
     background: #fbfbfb;
+    width: 287px;
+    height: 292px;
 }
 .blog_2 .flowers article .read{
     background: #fbfbfb;
@@ -933,6 +939,7 @@ stroke: white!important;
 footer .container{
     border-bottom: none;
     flex-wrap: wrap;
+    border-top: none;
 }
 .footer_box_1 {
     background: #fbfbfb;
@@ -1206,4 +1213,57 @@ label{
 
 .loaded .preloader {
     display: none;
+}
+
+
+
+
+/*Для препроцессора*/
+.faq .container .ui-accordion .ui-accordion-header{
+    border-radius: 22px;
+    padding: 20px 16px;
+    background-color: transparent;
+    border: solid 2px #46A358;
+    border-bottom: none;
+    &.ui-state-active {
+        background-color: antiquewhite;
+        border-bottom: none;
+        border-radius: 22px 22px 0px 0px;
+    }
+}
+.faq .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+
+    border: solid 2px #46A358;
+    color: black;
+}
+.faq .ui-accordion .ui-accordion-content{
+    border: solid 2px #46A358;
+    border-radius: 22px 22px 0px 0px;
+    background-color: antiquewhite;
+    overflow: visible;
+}
+
+
+/*Без препроцессора*/
+.faq .container {
+    max-width: 1200px;
+    margin: auto; }
+.faq .ui-accordion .ui-accordion-header {
+    border-radius: 22px;
+    padding: 20px 16px;
+    background-color: transparent;
+    border: solid 2px #46a358; }
+.faq .ui-accordion .ui-accordion-header.ui-state-active {
+    background-color: antiquewhite;
+    border-bottom: none;
+    border-radius: 22px 22px 0px 0; }
+.faq .ui-state-active, .faq .ui-widget-content .ui-state-active, .faq .ui-widget-header .ui-state-active, .faq a.ui-button:active, .faq .ui-button:active, .faq .ui-button.ui-state-active:hover {
+    border: solid 2px #46a358;
+    color: black; }
+.faq .ui-accordion .ui-accordion-content {
+    border: solid 2px #46a358;
+    background-color: antiquewhite;
+    border-radius: 0px 0 22px 22px;
+    overflow: visible;
+    border-top: none;
 }
