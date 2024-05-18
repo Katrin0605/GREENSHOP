@@ -1,0 +1,519 @@
+@import "media.css";
+@import "mob_menu.css";
+
+
+
+$main_color:#46a358;
+$main_font:'cera_proregular';
+$main_background:#483D8B;
+$main_font-size:20px;
+$main_font_family:'cera_probold';
+
+@font-face {
+  font-family: 'cera_proregular';
+  src: url('../Fonts/cerapro-regular-webfont.eot');
+  src: url('../Fonts/cerapro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../Fonts/cerapro-regular-webfont.woff2') format('woff2'),
+  url('../Fonts/cerapro-regular-webfont.woff') format('woff'),
+  url('../Fonts/cerapro-regular-webfont.ttf') format('truetype'),
+  url('../Fonts/cerapro-regular-webfont.svg#cera_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'cera_problack';
+  src: url('../Fonts/cerapro-black-webfont.eot');
+  src: url('../Fonts/cerapro-black-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../Fonts/cerapro-black-webfont.woff2') format('woff2'),
+  url('../Fonts/cerapro-black-webfont.woff') format('woff'),
+  url('../Fonts/cerapro-black-webfont.ttf') format('truetype'),
+  url('../Fonts/cerapro-black-webfont.svg#cera_problack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'cera_promedium';
+  src: url('../Fonts/cerapro-medium-webfont.eot');
+  src: url('../Fonts/cerapro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../Fonts/cerapro-medium-webfont.woff2') format('woff2'),
+  url('../Fonts/cerapro-medium-webfont.woff') format('woff'),
+  url('../Fonts/cerapro-medium-webfont.ttf') format('truetype'),
+  url('../Fonts/cerapro-medium-webfont.svg#cera_promedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'cera_probold';
+  src: url('../Fonts/cerapro-bold-webfont.eot');
+  src: url('../Fonts/cerapro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../Fonts/cerapro-bold-webfont.woff2') format('woff2'),
+  url('../Fonts/cerapro-bold-webfont.woff') format('woff'),
+  url('../Fonts/cerapro-bold-webfont.ttf') format('truetype'),
+  url('../Fonts/cerapro-bold-webfont.svg#cera_probold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'cera_prolight';
+  src: url('../Fonts/cerapro-light-webfont.eot');
+  src: url('../Fonts/cerapro-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../Fonts/cerapro-light-webfont.woff2') format('woff2'),
+  url('../Fonts/cerapro-light-webfont.woff') format('woff'),
+  url('../Fonts/cerapro-light-webfont.ttf') format('truetype'),
+  url('../Fonts/cerapro-light-webfont.svg#cera_prolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #a5a5a5;
+  padding: 12px 14px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  width: 100%;
+  height: 40%;
+  margin-top: 16px;
+  box-sizing: border-box;
+}
+
+.conteiner {
+  max-width: 500px;
+  margin: auto;
+  border: solid 2px black;
+  padding: 52px 100px 50px;
+  box-sizing: border-box;
+}
+
+#box_model {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  color: #3d3d3d;
+  margin-bottom: 14px;
+}
+
+.conteiner a {
+  display: block;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 123%;
+  text-align: center;
+  color: #727272;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px 68px;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.text_register {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  color: #3d3d3d;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.conteiner #box_model span:first-of-type {
+  font-weight: 500;
+  font-size: $main_font-size;
+  line-height: 80%;
+  color: #3d3d3d;
+  border-right: 5px;
+  margin: 12px;
+}
+
+.conteiner #box_model span:last-of-type {
+  font-weight: 500;
+  font-size:$main_font-size;
+  line-height: 80%;
+  color: $main_color;
+}
+
+.conteiner #box_model span:nth-child(2) {
+  font-weight: 250;
+  font-size: 18px;
+  line-height: 89%;
+  color: #3d3d3d;
+  padding-right: 10px;
+}
+
+button {
+  background: $main_color;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 15px 118px;
+  margin-top: 41px;
+  margin-bottom: 36px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.google-picture {
+  padding-right: 10px;
+}
+
+.facebook-picture {
+  padding-right: 4px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: solid 1px grey; /*добавилась линия внизу второго контейнера*/
+  display: flex; /*получилось все выровнять только flex*/
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+header {
+  padding-top: 31px;
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    /*margin-bottom: 12px;*/
+    .dropdown{
+      display: block;
+      position: absolute;
+      background: #edf6ee;
+      top: 59px;
+      height: 0;
+      opacity: 0;
+      min-width: 188px;
+      left: 0px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #3d3d3d;
+      font-family: $main_font;
+    }
+  }
+  nav li{
+    &:after {
+      height: 3px;
+      /*background-color: #46a358;*/
+      background-color: transparent;
+      width: 100%;
+      content: "";
+      display: block;
+      margin-top: 22px;
+      transition: 0.3s;
+      font-family: $main_font;
+      &:hover a{
+        font-family: $main_font_family;
+      }
+    }
+  }
+}
+
+header nav, header nav li, header.logo {
+  /*display: inline-block;*/
+}
+
+
+.drop .dropdown li a{
+  font-family: $main_font;
+  position: relative;
+  top: 7px;
+}
+
+/*!*Выпадающие списки в меню*!
+header nav ul .dropdown{
+  display: block;
+  position: absolute;
+  background: #edf6ee;
+  top: 59px;
+  height: 0;
+  opacity: 0;
+  min-width: 188px;
+  left: 0px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3d3d3d;
+  font-family: $main_font;
+}*/
+header nav ul li.dropdown{
+  position: relative;
+
+}
+header nav ul li.drop:hover .dropdown{
+  opacity: 1;
+  height: auto;
+  transition: 0.5s;
+ }
+
+/*Выпад.список_2*/
+header nav ul .dropdown_2{
+  display: block;
+  position: absolute;
+  background: #edf6ee;
+  top: 0px;
+  height: 0;
+  right: -177px;
+  opacity: 0;
+  min-width: 178px;
+  font-family: $main_font;
+  li{
+    &:last-of-type:after{
+      display:none;
+    }
+  }
+}
+
+.dropdown li:hover a, .drop_2 .dropdown_2 li:hover a{
+  color:white;
+  font-family: $main_font_family;
+}
+
+.dropdown li a, .drop_2 .dropdown_2 li a{
+  color: #3d3d3d;
+  font-family: $main_font;
+}
+header nav ul li .drop_2{
+  position: relative;
+  &:hover .dropdown_2{
+    opacity: 1;
+    height: auto;
+    transition: 0.7s;
+
+  }
+}
+
+header nav li:hover:after {
+  background-color: $main_color;
+}
+/*Стрелка в списке*/
+header nav ul .dropdown li:last-of-type:after{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../Images/Right2.svg");
+  position: absolute;
+  right: 5px;
+  top:-10px;
+  transition: 2s;
+}
+header nav ul .dropdown_2 li:last-of-type:after{
+  display:none;
+}
+header nav ul .dropdown li:last-of-type:hover:after{
+  transform: rotate(180deg);
+
+}
+
+header nav li ul li:after{
+  display:none;
+}
+header nav li ul li:hover{
+  background-color: $main_color;
+}
+header nav li ul li{
+  margin-right: 0;
+  min-height: 35px;
+ }
+header nav li a {
+  text-decoration: none;
+}
+header nav li ul li a{
+  margin-left: 12px;
+}
+
+
+/*Логотип*/
+header .container .logo {
+  /* margin-right: 229px;*/
+  display: inline-block;
+  img{
+    animation: animate 3s;
+    animation-iteration-count: infinite;
+  }
+}
+
+/*header .container .logo img{
+  animation: animate 3s;
+  animation-iteration-count: infinite;
+}*/
+/*анимация логотипа*/
+
+@keyframes animate {
+  0% {
+    transform: perspective(23rem) rotateY(0deg);
+  }
+  10% {
+    transform: perspective(23rem) rotateY(-65deg);
+  }
+  90%, 100% {
+    transform: perspective(23rem) rotateY(360deg);
+  }
+}
+
+
+header .login {
+  /*margin-left: 370px;*/
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  /*margin-bottom: 18px;*/
+}
+header .login:hover{
+  transition: .8s;
+  background-color: $main_background;
+}
+header nav li {
+  margin-right: 50px;
+  /*margin-bottom: 37px;*/
+  position: relative;
+  a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    font-family: $main_font;
+  }
+}
+
+header nav li:last-of-type {
+  margin-right: 0;
+
+}
+
+
+.login {
+  background: $main_color;
+  border-radius: 6px;
+  /*width: 100px;*/
+  padding-right: 17px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  font-family: 'cera_promedium';
+
+}
+
+.login:before {
+  content: "";
+  display: inline-block;
+  background-image: url("../Images/Logout.svg"); /*появился лишний элемент в картинке?*/
+  margin-right: 5px;
+  margin-left: 17px;
+  height: 18px;
+  width: 18px;
+}
+
+/*банер*/
+
+
+.banner .container {
+  background: linear-gradient(135deg, #f5f5f5 0%, #f5f5f5 100%);
+  min-height: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: none;
+  h1 {
+    margin-bottom: 17px;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    font-family: 'cera_problack';
+    span { /*переносит текст на новую строку??*/
+      color: $main_color;
+
+    }
+  }
+  p {
+    margin-bottom: 44px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #727272;
+    font-family: $main_font;
+  }
+}
+
+.banner article {
+  /*max-width: 557px;*/
+  display: inline-block;
+  margin-right: 93px;
+  padding-left: 43px;
+  box-sizing: border-box;
+  h4 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    margin-bottom: 17px;
+    font-family: 'cera_promedium';
+  }
+}
+
+
+/*кнопка*/
+.banner .container article a {
+  background:$main_color;
+  border-radius: 6px;
+  /*width: 140px;*/
+  padding-left: 27px;
+  padding-right: 27px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: $main_font_family;
+  animation: bouncing 0.5s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both;
+  &:hover{
+    transition: .8s;
+    background-color: $main_background;
+  }
+  img {
+    width: 518px;
+    height: 470px;
+  }
+  }
+
+@keyframes bouncing{
+  0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+  100%{ bottom: 50px; box-shadow: 0 50px 50px rgba(0,0,0,0.1);}
+}
+
+
