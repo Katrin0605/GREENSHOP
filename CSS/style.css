@@ -377,7 +377,7 @@ stroke: white!important;
 }
 
 
-/*нижний blog*/
+/*!*нижний blog*!
 .blog{
     min-width: 1200px;
     margin-bottom: 138px;
@@ -395,7 +395,7 @@ stroke: white!important;
     display: flex;
     justify-content: space-between;
     background: #ffffff;
-    /*margin-bottom: 138px;*/
+    !*margin-bottom: 138px;*!
 }
 .blog .container article img{
     background: #fbfbfb;
@@ -505,7 +505,7 @@ stroke: white!important;
     font-size: 14px;
     line-height: 157%;
     color: #727272;
-   /* margin-bottom: 35px;*/
+   !* margin-bottom: 35px;*!
     margin-bottom: 9px;
     font-family: 'cera_proregular';
 }
@@ -536,7 +536,7 @@ stroke: white!important;
 
 .blog_2 article img{
     margin-bottom: 0px;
-}
+}*/
 
 /*footer{
     width: 1200px;
