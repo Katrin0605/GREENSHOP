@@ -669,6 +669,8 @@ header nav li:last-of-type {
     background-color: antiquewhite;
     border-bottom: none;
     border-radius: 22px 22px 0px 0; }
+    .faq .ui-accordion .ui-accordion-header.ui-state-active .ui-icon {
+      transform: rotate(180deg); }
 .faq .ui-state-active, .faq .ui-widget-content .ui-state-active, .faq .ui-widget-header .ui-state-active, .faq a.ui-button:active, .faq .ui-button:active, .faq .ui-button.ui-state-active:hover {
   border: solid 2px #46a358;
   color: black; }
@@ -679,15 +681,19 @@ header nav li:last-of-type {
   overflow: visible;
   border-top: none; }
 .faq .ui-icon {
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
   position: absolute;
   right: 20px;
   background-image: none;
   background-position: 0;
   text-indent: 0; }
   .faq .ui-icon:before {
-    background-image: url("../Images/chevron-down.svg"); }
+    background-image: url("../Images/chevron-down.svg");
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px; }
 
 /*.ui-icon {
   &:before{

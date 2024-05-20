@@ -845,6 +845,9 @@ header nav li:last-of-type {
       background-color: antiquewhite;
       border-bottom: none;
       border-radius: 22px 22px 0px 0;
+      .ui-icon{
+        transform: rotate(180deg);
+      }
     }
   }
 
@@ -862,8 +865,8 @@ header nav li:last-of-type {
   }
 
   .ui-icon {
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
     position: absolute;
     right: 20px;
     background-image: none;
@@ -872,6 +875,10 @@ header nav li:last-of-type {
 
     &:before {
       background-image: url("../Images/chevron-down.svg");
+      content: "";
+      display: inline-block;
+      width: 32px;
+      height: 32px;
     }
   }
 }
