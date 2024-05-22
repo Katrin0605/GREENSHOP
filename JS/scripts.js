@@ -62,7 +62,7 @@ $( function() {
         t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
     }*/
 
-    //Navigation
+    /*Navigation*/
 
     var app = function () {
         var body = undefined;

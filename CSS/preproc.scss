@@ -1,5 +1,5 @@
 @import"media.css";
-@import "mob_menu.css";
+/*@import "mob_menu.css";*/
 
 
 
@@ -308,6 +308,7 @@ header nav ul li .drop_2{
 
 header nav li:hover:after {
   background-color: $main_color;
+
 }
 /*Стрелка в списке*/
 header nav ul .dropdown li:last-of-type:after{
@@ -825,7 +826,11 @@ header nav li:last-of-type {
     display: block;
     min-width: auto;
   }
+  .owl-carousel .owl-nav button.owl-next{
+    display: none;
+  }
 }
+
 
 /*accordion*/
 

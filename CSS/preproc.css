@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(media.css);
-@import url(mob_menu.css);
+/*@import "mob_menu.css";*/
 @font-face {
   font-family: 'cera_proregular';
   src: url("../Fonts/cerapro-regular-webfont.eot");
@@ -655,7 +655,10 @@ header nav li:last-of-type {
 
   .blog .container {
     display: block;
-    min-width: auto; } }
+    min-width: auto; }
+
+  .owl-carousel .owl-nav button.owl-next {
+    display: none; } }
 /*accordion*/
 .faq .container {
   max-width: 1200px;
